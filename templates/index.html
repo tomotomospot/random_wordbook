@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ランダム単語表示</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>ランダムな単語表示をするよ</h1>
+        </div>
+    </header>
+
+    <div class="container main-content">
+        <form id="wordForm">
+            <label for="wordCount">単語の数を選択：</label>
+            <select id="wordCount" name="wordCount">
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="15">15</option>
+            </select>
+            <button type="submit">ゆっくり押してね</button>
+        </form>
+        <ul id="wordList">
+            <!-- JavaScriptによって動的に単語が挿入されます -->
+        </ul>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 右投げ左打ちソフト All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/animateWords.js') }}"></script>
+</body>
+</html>
