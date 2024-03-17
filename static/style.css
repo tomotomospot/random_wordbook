@@ -13,6 +13,7 @@ body {
 li {
     font-size: larger; /* ポイントサイズを大きめに設定 */
 }
+
 header {
     background: #333;
     color: #fff;
@@ -29,7 +30,7 @@ header h1 {
     padding: 20px;
     min-height: 400px; /* Adjust based on content */
 }
-input[type="text"], select {
+input[type="text"] {
     width: 70%;
     padding: 10px;
     margin: 10px 0;
@@ -40,14 +41,16 @@ button[type="submit"] {
     background-color: #0779e4;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 8px 16px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 18px;
-    transition: transform 0.5s, opacity 0.5s; /* トランジションを追加 */
+    font-size: 16px;
+    transition: transform 0.2s ease; /* マウスオーバー時に変形を追加 */
 }
+
 button[type="submit"]:hover {
     background-color: #0056b3;
+    transform: translateY(-2px); /* マウスオーバー時に少し上に移動 */
 }
 footer {
     background: #333;
